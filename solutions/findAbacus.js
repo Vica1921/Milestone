@@ -15,14 +15,11 @@ function findAbacus(array) {
     if (array.length === 0) {
         return null;
     }
-    let indexOfAbacus = 0;
+    let indexOfAbacus = null;
     for (let i = 0; i < array.length; i++) {
         if (Object.keys(array[i]).includes('abacus') && array[i].abacus === true) {
             indexOfAbacus = i;
-        }
-        if (!Object.keys(array[i]).includes('abacus') {
-            indexOfAbacus = null;
-        }
+        } 
     }
     return indexOfAbacus;
 }
